@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0wf-9Q-eo0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VIz-KH-3KP">
+            <objects>
+                <viewController id="0wf-9Q-eo0" customClass="ViewController" customModule="ZoomingImageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g2p-pr-hVR"/>
+                        <viewControllerLayoutGuide type="bottom" id="YvI-sS-Te8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fNY-CN-h51">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon copy" translatesAutoresizingMaskIntoConstraints="NO" id="bQy-SC-Yfa">
+                                <rect key="frame" x="87" y="464" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="DV6-2d-Hcr"/>
+                                    <constraint firstAttribute="height" constant="150" id="Ukd-aK-qFa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.8813384012694444" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YvI-sS-Te8" firstAttribute="top" secondItem="bQy-SC-Yfa" secondAttribute="bottom" constant="53" id="WeA-LE-jjN"/>
+                            <constraint firstItem="bQy-SC-Yfa" firstAttribute="centerX" secondItem="fNY-CN-h51" secondAttribute="centerX" id="ZRf-dS-gE3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="bQy-SC-Yfa" id="4DN-bX-hH1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9VV-0s-txB" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon copy" width="512" height="384"/>
+    </resources>
+</document>
